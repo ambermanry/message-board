@@ -1,0 +1,21 @@
+<head>
+    <title>Messages</title>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Messages</h1>
+    </header>
+
+    <ul>
+        {{#each messages}}
+        {{> message}}
+        {{/each}}
+    </ul>
+</div>
+</body>
+
+<template name="message">
+    <li>{{text}}</li>
+</template>
